@@ -1,0 +1,65 @@
+# Large data files (>50MB) that should not be committed to Git
+# GitHub has a 100MB file size limit
+
+# Raw dataset files - PLINK binary format
+*.bed
+*.bim
+*.fam
+
+# PLINK output files
+*.hwe
+*.frq
+*.afreq
+*.lmiss
+*.imiss
+*.genome
+*.het
+*.nosex
+*.log
+*.ld
+*.prune.in
+*.prune.out
+*.irem
+
+# Association test results (can be very large)
+*.glm.firth
+*.glm.linear
+*.glm.logistic
+*.assoc
+*.qassoc
+
+# PCA outputs
+*.eigenval
+*.eigenvec
+*.eigenvec.allele
+*.acount
+*.king.cutoff.in.id
+*.king.cutoff.out.id
+
+# PRS files
+*.clumped
+*.sscore
+*.valid.snp
+
+# Compressed archives of large datasets (>50MB)
+# Keep smaller reference files, but exclude large dataset archives
+01_Dataset/*.zip
+*.tar.gz
+*.tar.bz2
+
+# GCTA/GREML outputs
+*.grm.bin
+*.grm.N.bin
+*.grm.id
+*.hsq
+
+# Checkpoint and temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
